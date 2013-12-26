@@ -49,7 +49,7 @@ class ConsoleServiceLib {
 	 * @param isInteractive
 	 * @return
 	 */
-	def buildCmdList(isLocalhost,psExec,listCmd,isInteractive){
+	def buildCmdList(isLocalhost,psExec,listCmd,isInteractive,params){
 		if(!isLocalhost){
 			listCmd.add(psExec)
 			listCmd.add("\\\\" + params['wiperdog_path']['host'])
